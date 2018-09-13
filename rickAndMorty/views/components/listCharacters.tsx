@@ -8,12 +8,13 @@ export class ListCharacters {
   @Intent('listCharacters') fetcher: BearerFetch
   render() {
     return <bearer-scrollable 
-		fetcher={this.fetcher} />
+		fetcher={this.fetcher}
 		renderCollection={collection => (
 			<bearer-navigator-collection
 			data={collection}
-			renderFunc={character => character.image}
+			renderFunc={char => char.image}
 			/>
 		)}
-	}
-  }
+	/>
+    }
+}
