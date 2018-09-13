@@ -7,7 +7,7 @@ export default function() {
   }
 
   return axios.create({
-    baseURL: 'https://rickandmortyapi.com/api/character/',
+    baseURL: 'https://rickandmortyapi.com/api/',
     timeout: 5000,
     headers
   })
