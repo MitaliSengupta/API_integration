@@ -7,7 +7,7 @@ export default class ListCharactersIntent {
   static intentType: any = FetchData
 
   static action(context: TnoAuthContext, params: any, body: any, callback: TFetchDataCallback) {    
-    Client().get('character/' + (Math.floor(Math.random()* (493 - 1 + 1)) + 1).toString() + '/')
+    Client().get('character/' + (Math.floor(Math.random()* (493 - 1 + 1)) + 1).toString() + ',' + (Math.floor(Math.random()* (493 - 1 + 1)) + 1).toString() + '/')
 	.then(({ data }) => {
     		 callback({ data })
 	      })
